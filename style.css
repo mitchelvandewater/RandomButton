@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+html {
+    padding-top: 50px;
+    font-family: 'Open Sans', Helvetica, arial, sans-serif;
+    text-align: center;
+    background-color: #eeeeee;
+}
+html *,
+html *:before,
+html *:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+html i,
+html em,
+html b,
+html strong,
+html span {
+    -webkit-transition: none;
+    transition: none;
+}
+
+*:before,
+*:after {
+    z-index: -1;
+}
+
+h1,
+h4 {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    line-height: 80px;
+    color: black;
+}
+.centerer{
+    margin-left: 500px;
+}
+#btn {
+
+    color: #323232;
+    height:300px;
+    width:300px;
+}
+#style {
+    position: absolute;
+    background:#000
+    display: block;
+    width: 0;
+    height: 0;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    -webkit-transition: width 0.4s, height 0.4s;
+    transition: width 0.4s, height 0.4s;
+    z-index: -1;
+}
+#btn:hover {
+    color: #ffffff;
+}
+#btn:hover span {
+    width: 150px;
+    height: 80px;
+}
+#btn:active {
+    background: #8f3846;
+}
